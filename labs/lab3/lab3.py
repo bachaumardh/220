@@ -40,6 +40,7 @@ def newton():
 
 
 def sequence():
+    print("This function will show you a sequence of odd numbers.")
     terms = eval(input("What is the number of terms in a series?"))
     total = 1
     for i in range(2, terms+2):
@@ -48,11 +49,16 @@ def sequence():
 
 
 def pi():
-    terms = eval(input("What is the number of terms in a series?"))
-    p = 0
+    print("This function will estimate the value of pi.")
+    terms = eval(input("What is the number of terms in the series?"))
+    estimate = 1
+    mult = 2
     for i in range(terms):
-        top = float(2 * i) / (2 * i - 1)
-        bot = float(2 * i) / (2 * i + 1)
-        p = p * top * bot
-    print(p)
+        top = mult/(mult-1)
+        bot = mult/(mult+1)
+        estimate *= bot * top
+        mult += 2
+    print("The estimate of pi is", estimate * 2)
+
+
 
