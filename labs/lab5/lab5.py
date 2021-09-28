@@ -32,7 +32,7 @@ def triangle():
     win_width = 500
     win_height = 500
     win = GraphWin("Draw a Triangle", win_width, win_height)
-    inst_pt = Point(width / 2, height - 10)
+    inst_pt = Point(win_width / 2, win_height - 10)
     instructions = Text(inst_pt, "Click three points")
     instructions.draw(win)
 
@@ -160,12 +160,11 @@ def process_list():
 
 
 def main():
-    distance()
     triangle()
     color_shape()
     process_list()
     process_string()
-    target()
+    #target()
 
     pass
 
