@@ -159,11 +159,18 @@ def process_list():
     print(x)
 
 
+def another_series():
+    series = [2, 4, 6]*3 + [2]
+    print(series)
+    print("sum =" + " " + str(sum(series)))
+
+
 def main():
     triangle()
     color_shape()
-    process_list()
     process_string()
+    process_list()
+    another_series()
     #target()
 
     pass
