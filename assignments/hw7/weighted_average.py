@@ -43,4 +43,3 @@ def main():
     weighted_average("grades.txt", "avg.txt")
 main()
 
-
