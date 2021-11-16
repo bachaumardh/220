@@ -1,0 +1,10 @@
+eggs
+python
+string
+list
+chicken
+laboratory
+matrix
+bucket
+orca
+pasta
